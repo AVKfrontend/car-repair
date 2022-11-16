@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Car repair service</title>
+	<!-- SEO -->
+	<meta name="description" content="WE UNDERSTAND HOW IMPORTANT IT IS TO FIND THE RIGHT AUTO SERVICE">
+	<meta name="keywords" content=" ">
+	<META NAME="author" content="AVK">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon_cr.png">
+	<!-- OG Tags -->
+	<meta property="og:title" content="Car repair service">
+	<meta property="og:description" content="WE UNDERSTAND HOW IMPORTANT IT IS TO FIND THE RIGHT AUTO SERVICE">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://site.com/image.png">
+	<meta property="og:site_name" content="Car repair">
+	<!-- Подключить шрифты -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header-line">
+				<a class="logotyp" href="#"></a>
+				<nav class="nav">
+					<a class="nav__link" href="#">Main</a>
+					<button class="nav__link" onclick = "scrTo('services')" type="button">Our services</button>
+					<button class="nav__link" onclick = "scrTo('about')" type="button">About</button>
+					<button class="nav__link" onclick = "scrTo('contacts')" type="button">Contacts</button>
+				</nav>
+				<div class="language">
+					<a class="language__ru" href="#">ru</a>
+					<span class="language__info">К сожалению, сейчас доступна только аглоязычная версия</span>
+					<a class="language__en" href="#">EN</a>
+				</div>
+				<button id="go-up" class="butt go-up" onclick = "scrTo('header')" type="button">Go up</button>
+			</div>
+			<h1 class="main-title">
+				KEEPING YOU ON THE ROAD WITH SERVICE YOU CAN TRUST
+			</h1>
+			<a class="butt" href="#">Show more</a>
+			<ul class="cta">
+				<li class="cta__item">
+					<a class="cta__link" href="tel:222222222">
+						<span class="cta__phon"></span>
+						<h4 class="cta__title">
+							CALL US NOW 222-222-222
+						</h4>
+						<span class="cta__info">
+							Feel free to call us
+						</span>
+					</a>
+				</li>
+				<li class="cta__item">
+					<div id="appointment" class="cta__link">
+						<span class="cta__calendar"></span>
+						<h4 class="cta__title">
+							GET FREE APPOITMET
+						</h4>
+						<span class="cta__info">
+							Free Diagnosis & Brake Checks
+						</span>
+					</div>
+				</li>
+				<li class="cta__item">
+					<!-- <no-index> -->
+					<a class="cta__link" href="https://www.google.com/maps/search/New+York,+1286+Ruumu+Nanor" rel="nofollow noreferrer noopener" target="_blank">
+						<span class="cta__map"></span>
+						<h4 class="cta__title">
+							FIND US ON MAP
+						</h4>
+						<span class="cta__info">
+							New York, 1286 Ruumu Nanor
+						</span>
+					</a>
+					<!-- </no-index> -->
+				</li>
+			</ul>
+		</div>
+		<div id="modal-window" class="modal-window">
+			<div class="modal-window__form">
+				<form class="form" action="#" method="GET">
+					<div class="form__row">
+						<label class="form__label form__label--name">
+							<input class="form__input form__input--name" type="text" required>
+							<span class="form__span form__span--name">Name</span>
+						</label>
+						<label class="form__label form__label--lname">
+							<input class="form__input form__input--lname" type="text" required>
+							<span class="form__span form__span--lname">Last name</span>
+						</label>
+					</div>
+					<div class="form__row">
+						<label class="form__label form__label--mail">
+							<input class="form__input form__input--mail" type="email" required>
+							<span class="form__span form__span--mail">Email</span>
+						</label>
+						<label class="form__label form__label--mail">
+							<input class="form__input form__input--mail" type="tel" required>
+							<span class="form__span form__span--mail">Phone</span>
+						</label>
+					</div>
+					<label class="form__label">
+						<textarea class="form__input form__area"></textarea>
+						<span class="form__span form__span--area">What do you want to check</span>
+					</label>
+					<button class="butt form__button">Send</button>
+				</form>
+				<button id="modal-window__close" class="modal-window__close" type="button">X</button>
+			</div>
+		</div>
+	</header>
+	<section class="services" id="services">
+		<div class="container">
+			<h2 class="section-title section-title--color">
+				OUR SERVICES
+			</h2>
+			<a class="section-link" href="#">VIEW ALL SERVICES</a>
+			<ul class="serv-list">
+				<li class="serv-list__item">
+					<div class="serv-list__wrupper">
+						<img class="serv-list__photo" src="img/iStock-1125646126.jpg" alt="car diagnostic">
+						<div class="serv-list__mask">
+							<button class="serv-list__btn">+</button>
+							<p class="serv-list__promo">
+								ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
+							</p>
+						</div>
+					</div>
+					<h3 class="serv-list__subject">DIAGNOSTIC</h3>
+				</li>
+				<li class="serv-list__item">
+					<div class="serv-list__wrupper">
+						<img class="serv-list__photo" src="img/iStock-1227609937.jpg" alt="wheels diagnostic">
+						<div class="serv-list__mask">
+							<button class="serv-list__btn">+</button>
+							<p class="serv-list__promo">
+								ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
+							</p>
+						</div>
+					</div>
+					<h3 class="serv-list__subject">TIRES & WHEELS</h3>
+				</li>
+				<li class="serv-list__item">
+					<div class="serv-list__wrupper">
+						<img class="serv-list__photo" src="img/iStock-544604266.jpg" alt="engine diagnostic">
+						<div class="serv-list__mask">
+							<button class="serv-list__btn">+</button>
+							<p class="serv-list__promo">
+								ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
+							</p>
+						</div>
+					</div>
+					<h3 class="serv-list__subject">ENGINES</h3>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="container about-flex">
+			<div class="about-flex__content">
+				<h2 class="section-title">
+					WE UNDERSTAND HOW IMPORTANT IT IS TO FIND THE RIGHT AUTO SERVICE
+				</h2>
+				<p class="about-flex__text">
+					Car repairs and maintenance can be expensive and no one wants to have pay to repair damage caused by shoddy repair service. When you bring your car into our auto shop, you won’t have to worry because our staff is comprised of ASE certified technicians who are committed to making sure you have a safe dependable car.
+				</p>
+				<a class="about-flex__link" href="#">MORE ABOUT US</a>
+			</div>
+			<div class="about-flex__visual">
+				<img class="about-flex__img" src="img/car_repair_el1.jpg" alt="car repairs and maintenance">
+			</div>
+		</div>
+	</section>
+	<section class="accent" id="accent">
+		<div class="container">
+			<span class="slogan">FAST & EASY</span>
+			<span class="subject">our work process</span>
+			<ul class="works">
+				<li class="works__item">
+					<h3 class="works__title">1.Request your quote</h3>
+					<p class="works__text">We will be there when you most need us</p>
+				</li>
+				<li class="works__item">
+					<h3 class="works__title">02. BRING YOUR VEHICLE</h3>
+					<p class="works__text">We are car guys at heart</p>
+				</li>
+				<li class="works__item">
+					<h3 class="works__title">03. GET IT REPAIRED</h3>
+					<p class="works__text">High quality, low cost car servicing</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="contacts" id="contacts">
+		<div class="container">
+			<h2 class="section-title">Contact us</h2>
+			<form class="form" action="#" method="GET">
+				<div class="form__row">
+					<label class="form__label form__label--name">
+						<input class="form__input form__input--name" type="text" required>
+						<span class="form__span form__span--name">Name</span>
+					</label>
+					<label class="form__label form__label--lname">
+						<input class="form__input form__input--lname" type="text" required>
+						<span class="form__span form__span--lname">Last name</span>
+					</label>
+				</div>
+				<div class="form__row">
+					<label class="form__label form__label--mail">
+						<input class="form__input form__input--mail" type="email" required>
+						<span class="form__span form__span--mail">Email</span>
+					</label>
+					<label class="form__label form__label--mail">
+						<input class="form__input form__input--mail" type="tel" required>
+						<span class="form__span form__span--mail">Phone</span>
+					</label>
+				</div>
+				<label class="form__label">
+					<textarea class="form__input form__area"></textarea>
+					<span class="form__span form__span--area">Message</span>
+				</label>
+				<button class="butt form__button">Send</button>
+			</form>
+		</div>
+	</section>
+	<footer class="footer" id="footer">
+		<div class="container aside">
+			<div class="">
+				<span class="aside__copy">
+					© 2021 Auto theme by Frontend Tricks
+				</span>
+				<span class="aside__copy">
+					© 2022 Coding by AVK
+				</span>
+			</div>
+			<ul class="socials">
+				<li class="socials__link">
+					<!-- <noindex> -->					
+					<a class="socials__in" href="https://www.linkedin.com/" rel="nofollow noopener noreferrer" target="_blank" title="LinkedIn"></a>
+					<!-- </noindex> -->					
+				</li>
+				<li class="socials__link">
+					<!-- <noindex> -->					
+					<a class="socials__fb" href="https://www.facebook.com/" rel="nofollow noopener noreferrer" target="_blank" title="Facebook"></a>
+					<!-- </noindex> -->					
+				</li>
+				<li class="socials__link">
+					<!-- <noindex> -->					
+					<a class="socials__inst" href="https://www.instagram.com/" rel="nofollow noopener noreferrer" target="_blank" title="Instagram"></a>
+					<!-- </noindex> -->					
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>
